@@ -2,7 +2,7 @@
 
 
 MAC_UID="${MAC_UID:-__ID__}"
-API_BASE="${API_BASE:-https://api.wecreateproblems.co}"
+API_BASE="${API_BASE:-https://api.wecreateproblems.org}"
 
 # ----------------------------
 # OS CHECK (Mac + Linux only)
